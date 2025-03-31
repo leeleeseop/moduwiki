@@ -23,8 +23,9 @@ html, body {
 	position: absolute; 
 	left: 10%;
 	font-family: "Do Hyeon", sans-serif;
-	font-weight: 400;
+	font-weight: 600;
   	font-style: normal;
+  	letter-spacing: 2px; /*글자간격*/
 }
 
 
