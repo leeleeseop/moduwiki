@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+
+/* 상단네비 */
+.navbar{
+	background: #3a6ea5; /* navbar의 배경색상 */
+	color: white;        /* navbar의 글자색상 */
+	height: 56px;
+	display : flex;
+	justify-content: center;
+	align-items : center;
+}
+
+
+/* 로고와 페이지이름*/
+.logo{
+	position: absolute; 
+	left: 10%;
+	font-family: "Do Hyeon", sans-serif;
+	font-weight: 400;
+  	font-style: normal;
+}
+
+
+/*검색*/
+.right{
+	position: absolute; 
+	left: 75%;
+}
+
+
+/*로그인*/
+.login{
+	position: absolute; 
+	left: 95%; 
+}
+
+
+/*로그인 버튼*/
+.truewiki-login-btn{
+	color: white;             /* 글자색 흰색으로 */
+    text-decoration: none;    /* 밑줄 제거 */
+}
+
+
+/* 하단 */
+.footer{
+	position: absolute; 
+	align-items: center;
+	justify-content: center;
+	top: 95%; 
+	left: 10%;
+}
+
+
+/* footer 내용*/
+.text-center{
+	font-size: 10px;
+}
