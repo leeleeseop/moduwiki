@@ -41,23 +41,38 @@
 			<a href=""></a>
 		</div>
 		
+		
 		<!-- 검색관련 -->
 		<div class="right">
-			<input type="text" placeholder="검색">
-			<button>검색</button>
+		  <form action="/search" method="get" class="search-box">
+		    <input type="text" name="q" placeholder="검색">
+		    <button type="submit" class="btn"><i class="fa fa-search"></i></button>
+		  </form>
 		</div>
+
 		
 		<!-- 로그인 -->
 		<div class="login">
-			<!-- 로그인이 안된 경우 로그인 버튼이 보인다 -->
+			<!-- 로그인이 안된 경우 로그인 화면 / 로그인이 되어 있을경우 토클 메뉴창 -->
 			<c:if test="${ empty login }">
-			  <a href="/member/loginForm.do" class="nav-item nav-link truewiki-login-btn">로그인</a>
+				<a href="/member/loginForm.do" class="truewiki-login-btn">
+					<svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 126.76 101.4" style="width: 30px; height: auto;">
+					  <g>
+					    <path class="st0" d="M93.81,86.34H32.95c0,0-3.04-41.68,30.43-41.68S93.81,86.34,93.81,86.34z"/>
+					    <circle class="st0" cx="63.38" cy="27.57" r="12.5"/>
+					  </g>
+					</svg>
+				</a>
 			</c:if>
 		</div>
 	</nav>
+	<!-- 상단네비의 끝 -->
 	
 	
-	<!-- Footer -->
+	
+	
+	
+	<!-- 하단 -->
 	<footer class="footer">
 		<div class="container">
 			<div class="text-center">
@@ -65,4 +80,5 @@
 			</div>
 		</div>
 	</footer>
+	<!-- 하단의 끝 -->
 </body>
