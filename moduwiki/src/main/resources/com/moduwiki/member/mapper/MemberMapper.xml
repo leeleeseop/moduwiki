@@ -5,6 +5,11 @@
 <!-- 로그인 -->
 <select id="login" resultType="com.moduwiki.member.vo.LoginVO">
 	select 
+		m.Mid, m.Mname, m.Memail, g.Gno
+	from member m, grade g
+	where
+		(m.Mid = #{Mid} and m.Mpw = #{Mpw} and m.Mstatus='정상')
+		and (m.Gno = g.Gno)
 </select>
 
 

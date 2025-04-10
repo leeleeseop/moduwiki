@@ -19,4 +19,7 @@ public class LoginVO {
 		
 	// 등급번호
 	private Integer Gno;	
+	
+	// 등급이름
+	private String Gname;
 }
