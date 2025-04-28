@@ -5,5 +5,6 @@
 	<!-- hello에 대한 요청이 들어오면 적용시키는 레이아웃 선언 -->
 	<decorator name="main" page="default_decorator.jsp">
 		<pattern>/main/*</pattern>
+		<pattern>/member/*</pattern>
 	</decorator>
 </decorators>

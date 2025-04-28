@@ -36,7 +36,7 @@
 	<interceptors>
 		<interceptor>
 			<mapping path="/**"/>
-			<beans:bean class="com.moduwiki.util.intercepter.AuthrityInterceptor"></beans:bean>
+			<beans:bean class="com.moduwiki.util.interceptor.AuthrityInterceptor"></beans:bean>
 		</interceptor>
 	</interceptors>
 	

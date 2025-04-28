@@ -1,4 +1,4 @@
-package com.moduwiki.util.intercepter;
+package com.moduwiki.util.interceptor;
 
 import java.util.HashMap;
 import java.util.Map;

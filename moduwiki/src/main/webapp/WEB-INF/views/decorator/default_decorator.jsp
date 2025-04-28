@@ -30,7 +30,8 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://code.jquery.com/ui/1.14.0/jquery-ui.js"></script>
-<script src="/js/default_decorator.js"></script> 
+<script src="/js/default_decorator.js"></script>
+<decorator:head></decorator:head>
 </head>
 
 <body>
@@ -53,10 +54,10 @@
 
 		
 		<!-- 로그인 -->
-		<div class="login">
+		<div class="navbar-nav login">
 			<!-- 로그인이 안된 경우 로그인 화면 / 로그인이 되어 있을경우 토클 메뉴창 -->
 			<c:if test="${ empty login }">
-				<a href="/member/loginForm.do" class="truewiki-login-btn">
+				<a href="/member/loginForm.do" class="nav-item nav-link login-btn">
 					<svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 126.76 101.4" style="width: 30px; height: auto;">
 					  <g>
 					    <path class="st0" d="M93.81,86.34H32.95c0,0-3.04-41.68,30.43-41.68S93.81,86.34,93.81,86.34z"/>
@@ -67,7 +68,7 @@
 			</c:if>
 			
 			<!-- 로그인 된 상태 -->
-			<c:if test="${!empty login }">
+			<c:if test="${! empty login }">
 			  <div class="nav-item dropdown">
 			    <div class="nav-link dropdown-toggle" onclick="toggleDropdown()">
 			      <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 126.76 101.4" style="width: 30px; height: auto;">
@@ -80,7 +81,7 @@
 			
 			    <!-- 드롭다운 메뉴 -->
 			    <div class="dropdown-menu" id="userDropdown">
-			      <div class="dropdown-item">사용자:<br> ${login.mname }</div>
+			      <div class="dropdown-item">사용자:<br></div>
 			      <div class="dropdown-item">내정보보기</div>
 			      <div class="dropdown-item">설정</div>
 			      <div class="dropdown-item">내 문서함</div>
@@ -93,7 +94,7 @@
 		</div>
 	</nav>
 	<!-- 상단네비의 끝 -->
-	
+	<decorator:body />	
 	<!-- 하단 -->
 	<footer class="footer">
 		<div class="container">

@@ -8,17 +8,6 @@
 <%@ attribute name="query" required="false"
  type="java.lang.String" %> 
 
-<% /** PageNation을 위한 사용자 JSP 태그  *
-	 * 작성자 웹짱 이영환 강사 
-	 * 작성일 2023.07.27
-	 * 버전 5.0
-	 
-	 * query 데이터가 있는 경우 - 일반 게시판 페이지 정보로 사용한다. (int=1 --> int=0 으로 바꿔서 사용)
-	 *   - listURI="list.do"
-	 *	 - query 정보는 페이지 정보 외에 전달할 다른 정보가 있으면 &key=value 형식으로 작성한다.
-	 * 사용방법 :<pageObject:pageNav listURI="list"
-	 			pageObject= "웹짱 페이지 객체" query="일반 게시판 페이지 정보 외 다른 전달 정보" />
-   */ %>
 
 <% request.setAttribute("noLinkColor", "#999"); %>
 <% request.setAttribute("tooltip", " data-toggle=\"tooltip\" data-placement=\"top\" "); %>
